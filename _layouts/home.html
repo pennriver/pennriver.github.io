@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Website Title -->
+	<title>LifeOps</title>
+
+	<!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+-->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+	<!-- SEO Meta Tags -->
+	<meta name="description" content="Life and Annuity policy administration designed for the cloud from the ground up.">
+	<meta name="keywords" content="saas, software as a service, insurance, devops, policy admin, annuities, life">
+
+	<!-- Styles -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+	<link href="/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="/assets/css/themify-icons.css" rel="stylesheet">
+	<link href="/assets/css/animate.css" rel="stylesheet">
+	<link href="/assets/css/swiper.css" rel="stylesheet">
+	<link href="/assets/css/magnific-popup.css" rel="stylesheet">
+	<link href="/assets/css/styles.css" rel="stylesheet">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="/assets/img/favicon/favicon.png">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="main-wrapper"> <!-- used to force scroll-bar in order to keep the preloader in the center -->
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
+
+
+		<!-- Navigation -->
+		<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header scrolling">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span> <span class="ti-menu"></span>
+						</button>
+
+						<!-- Text based logo -->
+						<!-- Uncomment this section and comment Image based logo, to use a text logo instead of an image logo -->
+						<!-- <a class="navbar-brand scrolling" href="#top">Lyra</a> -->
+
+						<!-- Image based logo -->
+						<a href="index.html" class="navbar-brand img-logo scrolling" title="LifeOps: Policy Admin">
+							<img src="/assets/img/logo2.png" alt="logo">
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a class="scrolling" href="#header">Home</a>
+							</li>
+							<li>
+								<a class="scrolling" href="#features">LifeOps Advantage</a>
+							</li>
+							<li>
+								<a class="scrolling" href="#description">About</a>
+							</li>
+							<li>
+								<a class="scrolling" href="#testimonials">Team</a>
+							</li>
+							<li>
+								<a class="scrolling" href="/blog">Blog</a>
+							</li>
+							<li>
+								<a class="scrolling" href="https://docs.life-ops.com" target="_blank">Documentation</a>
+							</li>
+							<li class="navbar-call-us">
+								{% include social-links2.html %}
+							</li>
+						</ul>
+					</div> <!-- end of navbar collapse -->
+				</div> <!-- end of row -->
+			</div> <!-- end of container -->
+		</nav><!-- end of navigation -->
+
+
+		<!--- Header -->
+		<header id="header" >
+			<div class="flex-container-wrapper"> <!-- IE fix for vertical alignment in flex box -->
+				<div class="header-content video-section">
+					<div class="pattern-overlay">
+						<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=zlfgLXqvx_M',containment:'.video-section', quality:'highres', autoPlay:true, showControls: false, startAt:0, stopAt: 15, mute:true, opacity: 1}"></a>
+						<div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <img src="/assets/img/front3.png" style="width: 300px; height: 300px;">
+                </div>
+              </div>
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<h1>LifeOps <small>Policy Admin</small></h1>
+									<p>Life and Annuity policy administration designed for the cloud from the ground up.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end of IE vertical alignment fix -->
+		</header> <!-- end of header -->
+
+		<!-- Features -->
+		<div id="features">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>LifeOps Advantage</h2>
+						<p class="sub-heading">LifeOps provides Insurance software with unparalleled DevOps tools in the industry.</p>
+					</div>
+					<div class="col-md-12">
+
+						<!-- Tabs -->
+						<div class="features-tabs">
+						<ul class="nav nav-pills nav-justified">
+							<li class="active"><a href="#tab_a" data-toggle="tab">DevOps For Life/Annuity</a></li>
+							<li><a href="#tab_b" data-toggle="tab">Agile For Life/Annuity</a></li>
+							<li><a href="#tab_c" data-toggle="tab">Life/Annuity Experts</a></li>
+						</ul>
+						</div>
+						<div class="tab-content">
+
+							<!-- Tab_a -->
+							<div class="tab-pane fade in active" id="tab_a">
+								<div class="col-md-4 text-center">
+									<span class="features-icons ti-ruler-pencil"></span>
+									<h4>LifeOps Developer Environment</h4>
+									<p>LifeOps provides a dynamic interface to <strong>configure</strong>, <strong>experiment</strong>, and <strong>troubleshoot</strong> Insurance products.
+										No other software package offers a configuration interface as simple and powerful as the LifeOps Developer Environment.</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<span class="features-icons ti-agenda"></span>
+									<h4>LifeOps Lab</h4>
+									<p>LifeOps Lab is a <strong>collaborative modeling tool</strong> for developers and users to experiment with new products and features in the Developer Environment.</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<span class="features-icons ti-settings"></span>
+									<h4>LifeOps Plan Builder</h4>
+									<p></p>
+									<p>LifeOps Plan Builder gives developers and business analysts a simple interface to <strong>manage product configuration</strong>.</p>
+								</div>
+								<div class="clearfix"></div> <!-- used to prevent features cells breaking layout on tablet viewport size -->
+								<div class="col-md-4 text-center">
+									<span class="features-icons ti-layers"></span>
+									<h4>Extendible Framework</h4>
+									<p>LifeOps provides an <strong>Extendible API</strong> that can be extended by each customer. <strong>Product Templates</strong> are provided
+										by the framework that covers 90% of Life and Annuity process variations.</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<span class="features-icons ti-cloud"></span>
+									<h4>LifeOps Bot</h4>
+									<p>LifeOps comes with a command line interface and Chat Bot that provides DevOps
+										automation and tools to <strong>manage cloud environments</strong>.</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<span class="features-icons ti-harddrives"></span>
+									<h4>Dockerized</h4>
+									<p>LifeOps provides Docker images out of the box. Customer implementations are also packaged as their own Docker images making
+										deployment to the cloud effortless</p>
+								</div>
+							</div> <!-- end of tab_a -->
+
+							<!-- Tab_b -->
+							<div class="tab-pane fade" id="tab_b">
+								<div class="row">
+									<div class="col-md-7">
+										<img class="img-responsive" src="/assets/img/devops.png" alt="tab b image">
+									</div>
+									<div class="col-md-5">
+										<div class="tab-b-right-pane">
+											<h3>Agile For Life And Annuity Products</h3>
+											<p>LifeOps combines its powerful <strong>DevOps Suite</strong> with <strong>GitFlow</strong> to bring
+												true agile development to Life and Annuity policy administration.</p>
+											<p>Shorten the development life cycle while delivering features, fixes, and updates frequently while maintaining stability.</p>
+											<a class="read-more" href="/new-features" target="_blank">Find out more ››</a>
+										</div>
+									</div>
+								</div>
+							</div> <!-- end of tab_b -->
+
+							<!-- Tab_c -->
+							<div class="tab-pane fade" id="tab_c">
+								<div class="row">
+									<div class="col-md-5">
+										<div class="tab-c-left-pane">
+											<h3>Solid Team Gets Solid Results</h3>
+											<p>If you want the best results from agile you need a solid team working closely with each other.</p>
+											<p>Agile require tight communication between developers and quality feedback from users. LifeOps will help you develop your own agile team
+												empowered by the excellent DevOps Suite offered by LifeOps.</p>
+											<a class="read-more" href="/mistakes-you-are-making" target="_blank">Find out more ››</a>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<img class="img-responsive" src="/assets/img/team.png" alt="Team">
+									</div>
+								</div>
+							</div> <!-- end of tab_c -->
+						</div><!-- end of tab content -->
+					</div>
+				</div> <!-- end of row -->
+			</div> <!-- end of container -->
+		</div> <!-- end of features -->
+
+
+		<!-- Description -->
+		<div id="description">
+			<!-- First Pane -->
+			<div class="row">
+				<div class="col-md-6 col-md-push-6">
+					<div class="row">
+						<img class="img-responsive" src="/assets/img/about/logo.png" alt="LifeOps">
+					</div>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					<div class="container description-first-pane">
+						<h3>About</h3>
+						<p>LifeOps is a Cloud based Annuity and Life Policy Administration System (native cloud) designed
+							with pre-built functionality that is flexible, extendable, transparent, verifiable, and maintainable (simple and concise).
+							The architecture of LifeOps facilitates speed to market with stable software deployments.</p>
+						<ul>
+							<li><span class="ti-thumb-up"></span>Bringing <a href="/new-features" target="_blank">DevOps</a> to Life and Annuity insurance companies.</li>
+							<li><span class="ti-thumb-up"></span>Tools that enable <strong>agile</strong> development and lower cost of ownership.</li>
+							<li><span class="ti-thumb-up"></span><strong>Experts</strong> with decades of insurance technology experience.</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- end of row -->
+
+			<!-- Second Pane -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<img class="img-responsive" src="/assets/img/about/lab.png" alt="LifeOps">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="container description-second-pane">
+						<h3>Life And Annuity Platform</h3>
+						<p>The LifeOps Development Environment sets our policy admin apart from others by allowing users to <strong>configure</strong>,
+							<strong>experiment</strong>, and <strong>troubleshoot</strong> Life and Annuity products.
+
+							<ul>
+								<li><span class="ti-thumb-up"></span>Add / manage <strong>Plans</strong> and <strong>Rates</strong></li>
+								<li><span class="ti-thumb-up"></span>Run <strong>Lab Trials</strong> to experiment with Plan configuration</li>
+								<li><span class="ti-thumb-up"></span>Experiment with <strong>Web Services</strong> API</li>
+								<li><span class="ti-thumb-up"></span>Advance System Date / <strong>Cycle Up</strong> Policies</li>
+								<li><span class="ti-thumb-up"></span>Manage <strong>Security Roles</strong> and <strong>Users</strong></li>
+								<li><span class="ti-thumb-up"></span>Inspect Product and Policy Schemas</li>
+								<li><span class="ti-thumb-up"></span>Troubleshoot errors and incorrect results with <strong>Execution Trace</strong></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div> <!-- end of row -->
+		</div> <!-- end of description -->
+		<div class="clearfix"></div>
+
+
+		<!-- Magnific PopUp FAQ PopUp Content -->
+		<!-- mfp-hide class is required to keep the content hidden until the visitor clicks the button -->
+		<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+			<h3>Frequently Asked Questions</h3>
+			<div class="faq-row">
+				<div class="bullet-number">1</div>
+				<div class="faq-text">
+					<p class="faq-question">First question is about Lyra's minimum usage requirements like Internet speed and storage space?</p>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+				</div>
+			</div>
+			<div class="faq-row">
+				<div class="bullet-number">2</div>
+				<div class="faq-text">
+					<p class="faq-question">Second question concerns anyone interested in performance issues, troubleshooting and others?</p>
+					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful pointing has no control.</p>
+				</div>
+			</div>
+			<div class="faq-row">
+				<div class="bullet-number">3</div>
+				<div class="faq-text">
+					<p class="faq-question">Third question is about some of the app's features and their impact on business performance?</p>
+					<p>One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad commas, wild question marks and devious semikoli.</p>
+				</div>
+			</div>
+			<div class="faq-row">
+				<div class="bullet-number">4</div>
+				<div class="faq-text">
+					<p class="faq-question">Forth question is very important to all the registered users and the website visitors?</p>
+					<p>Put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of anyone concerned.</p>
+				</div>
+			</div>
+			<div class="faq-row">
+				<div class="bullet-number">5</div>
+				<div class="faq-text">
+					<p class="faq-question">Fifth question answers the all important question: why should I use Lyra and not something else?</p>
+					<p>Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+				</div>
+			</div>
+		</div> <!-- end of magnific popup -->
+
+		<div id="testimonials">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>LifeOps Team</h2>
+						<p class="sub-heading"></p>
+					</div>
+					<div class="col-md-12 text-center">
+
+						<!-- Swiper -->
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="customer-head" src="/assets/img/team/paul-soscia.png" alt="Paul Soscia">
+									<p> Paul brings more than <strong>20 years experience</strong> in the financial services industry with expertise
+										in leading both technology and business initiatives. He has held executive, PM, and lead architect
+										positions over the course of his career. That experience coupled with his product and business expertise
+										provided Paul with the foresight to develop a modern Policy Administration System.</p>
+									<h4>Paul Soscia, President and CEO</h4>
+									<img class="logo-customers-1 testimonials-logo" src="/assets/img/logo3.png" alt="LifeOps">
+								</div>
+								<div class="swiper-slide">
+									<img class="customer-head" src="/assets/img/team/sherry-xu.png" alt="Sherry Xu">
+									<p>Sherry is the primary developer and creator of the LifeOps Policy Administration platform. With over
+										<strong>15 years of experience</strong> in life and annuity administration systems, she has pioneered and shaped the
+										policy admin system of the future. Sherry has built a robust and dynamic design philosophy throughout her
+										career serving in critical roles for major Policy Administration Software vendors. </p>
+									<h4>Sherry Xu, Sr Software Architect</h4>
+									<img class="logo-customers-1 testimonials-logo" src="/assets/img/logo3.png" alt="LifeOps">
+								</div>
+								<div class="swiper-slide">
+									<img class="customer-head" src="/assets/img/team/ben-dashkiwsky.png" alt="Ben Dashkiwsky">
+									<p>With over <strong>10 years experience</strong> in Policy Administration Systems, Ben has specialized in implementing and
+										supporting policy admin systems through the software development lifecycle.</p>
+									<h4>Ben Dashkiwsky, Sr Software Engineer</h4>
+									<img class="logo-customers-1 testimonials-logo" src="/assets/img/logo3.png" alt="LifeOps">
+								</div>
+								<div class="swiper-slide">
+									<img class="customer-head" src="/assets/img/team/jerome-bridge.png" alt="Jerome Bridge">
+									<p>Jerome brings over <strong>10 years software development experience</strong> using JAVA/J2EE and other technologies to the
+										development of the LifeOps System. Jerome’s technical expertise and work with Open Source and Cloud
+										Computing ensures the LifeOps Policy Administration is based on advanced technologies.</p>
+									<h4>Jerome Bridge, Sr Software Engineer</h4>
+									<img class="logo-customers-1 testimonials-logo" src="/assets/img/logo3.png" alt="LifeOps">
+								</div>
+								<div class="swiper-slide">
+									<img class="customer-head" src="/assets/img/team/jason-cimorelli.png" alt="Jason Cimorelli">
+									<p>Known for his versatility and understanding of business processes, Jason brings over <strong>10 years of experience</strong>
+										in life and annuity policy administration systems.</p>
+									<h4>Jason Cimorelli, Sr Software Engineer</h4>
+									<img class="logo-customers-1 testimonials-logo" src="/assets/img/logo3.png" alt="LifeOps">
+								</div>
+								<div class="swiper-slide">
+									<img class="customer-head" src="/assets/img/team/ros-cheeseman.png" alt="Ros Cheeseman">
+									<p>Highly experienced systems analyst/programmer with <strong>30 years in the life insurance and annuity business</strong>.
+										Successfully designed and coded many new products and implemented several system conversions.</p>
+									<h4>Ros Cheeseman, Sr Business Analyst</h4>
+									<img class="logo-customers-1 testimonials-logo" src="/assets/img/logo3.png" alt="LifeOps">
+								</div>
+								<div class="swiper-slide">
+									<img class="customer-head" src="/assets/img/team/ginny-malecki.png" alt="Ginny Malecki">
+									<p>With over <strong>30 years in the Life, Health and Annuity insurance business</strong> Ginny has experience on mulitple
+										Policy Administration Systems. Her background includes experience in Office Operations at carriers
+										including MONY, Philadelphia Life, CIGNA, AIG, and Penn Mutual where she oversaw system implementations
+										for a variety of products and product enhancements.</p>
+								  <h4>Ginny Malecki, Management Consultant</h4>
+									<img class="logo-customers-1 testimonials-logo" src="/assets/img/logo3.png" alt="LifeOps">
+								</div>
+								<div class="swiper-slide">
+									<img class="customer-head" src="/assets/img/team/pam-doggett.png" alt="Pamela Doggett">
+									<p>Pam is a customer-centric business consultant with comprehensive knowledge of insurance processing and administration.
+										Her focus today includes corporate growth, business analysis  and client development. Pamela was a Co-founder of
+										AdminServer, Inc., a provider of insurance policy administration software, which was bought by Oracle in 2008.</p>
+									<h4>Pamela Doggett, Senior Advisor</h4>
+									<img class="logo-customers-1 testimonials-logo" src="/assets/img/logo3.png" alt="LifeOps">
+								</div>
+							</div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div> <!-- end of row -->
+			</div> <!-- end of container -->
+		</div> <!-- end of testimonials -->
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<h4>Our Office Address</h4>
+						<p>414 West State Street <br />Media, PA 19063</p>
+					</div>
+					<div class="col-sm-4">
+						<h4>Contact Details</h4>
+						<p>Tel: 484.416.0621 <br /><a href="mailto:office@lyra.com">info@lops.io</a> <br /><a href="#">www.lops.io</a></p>
+					</div>
+					<div class="col-sm-4">
+						<h4>Social Networks</h4>
+						{% include social-links2.html %}
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-md-12">
+						<p class="copyright">Copyright 2018 © LifeOps Inc. | <a class="back-to-top scrolling" href="#header">Back to Top <span class="ti-arrow-circle-up"></span></a></p>
+					</div>
+				</div> <!-- end of row -->
+			</div> <!-- end of container -->
+		</div> <!-- end of footer -->
+	</div> <!-- end of main wrapper -->
+
+
+	<!-- Scripts -->
+	<script src="/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script> <!-- jQuery v2.2.4 - necessary for Bootstrap's JavaScript plugins -->
+	<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script> <!-- Bootstrap v3.3.7 -->
+	<script src="/assets/js/jquery.easing.min.js" type="text/javascript"></script> <!-- jQuery Easing v1.3 for smooth scrolling between anchors-->
+	<script src="/assets/js/validator.min.js" type="text/javascript"></script> <!--  Validate the Contact Form -->
+	<script src="/assets/js/morphext.min.js" type="text/javascript"></script> <!-- Rotating text in the header-->
+	<script src="/assets/js/swiper.min.js" type="text/javascript"></script> <!-- Swiper v3.4.1 for testimonials slider -->
+	<script src="/assets/js/jquery.magnific-popup.js" type="text/javascript"></script> <!-- Magnific Popup v1.1.0 for lightboxes -->
+	<script src="/assets/js/jquery.mb.ytplayer.min.js" type="text/javascript"></script> <!-- YTPlayer for video header background -->
+	<script src="/assets/js/scripts.js" type="text/javascript"></script> <!--  Validate the Contact Form -->
+</body>
+</html>

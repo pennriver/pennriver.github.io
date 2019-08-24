@@ -1,0 +1,24 @@
+version: "3.3"
+
+services:
+  landing:
+    image: starefossen/github-pages
+    restart: always
+    networks:
+      - devops
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 4000:4000
+
+volumes:
+    data:
+    scratch:
+
+secrets:
+  devops:
+    file: ../secrets.json
+
+networks:
+    devops:
+        external: true

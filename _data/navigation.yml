@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: Home
+  url: /
+
+- title: Blog
+  url: /blog/
+
+- title: About
+  url: /about/
+
+- title: Documentation
+  url: https://docs.life-ops.com
