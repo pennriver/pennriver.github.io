@@ -4,8 +4,6 @@ services:
   landing:
     image: starefossen/github-pages
     restart: always
-    networks:
-      - devops
     volumes:
       - .:/usr/src/app
     ports:
@@ -15,10 +13,4 @@ volumes:
     data:
     scratch:
 
-secrets:
-  devops:
-    file: ../secrets.json
 
-networks:
-    devops:
-        external: true
