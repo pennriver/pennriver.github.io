@@ -391,13 +391,35 @@
 		$(function() {
 			$( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
 			$( "#demoBtn" ).click(function() {
+
+				var name = $( '#demoForm' ).find('input[name="name"]').val();
+				var email = $( '#demoForm' ).find('input[name="email"]').val();
+
+				if (!name) {
+					alert('Please fill in your name before submitting.');
+					return false;
+				}
+				if (!email) {
+					alert('Please fill in your e-mail before submitting.');
+					return false;
+				}
+
 				$( "#demoBtn" ).html('Sending Request');
+				$( "#demoBtn" ).prop('disabled', true);
+
+				var url = 'https://docs.google.com/forms/d/e/1FAIpQLScCzHIKdmcOmAglQ6jeVZmC4Hw53WdbhL3syyk5ml-kWnVBQg/formResponse?usp=pp_url';
+				url = url + '&entry.1196293035=' + email;
+				url = url + '&entry.989564337=' + name;
+
 				$.ajax({
-            type: 'post',
-            url: 'https://script.google.com/macros/s/AKfycbxR6a4NzruG0r6q-kzptJA_n-ZJBfaWPdGH1-NDm_SxtmSXJoU/exec',
-            data: $("#demoForm").serialize(),
-            success: function() { $( "#demoBtn" ).html('Thank You!!'); $('#demoBtn').prop('disabled', true); }
+		  			crossDomain: true,
+						dataType: "jsonp",
+            method: 'GET',
+            url: url,
+						success: function() { $( "#demoBtn" ).html('Thank You!!'); $('#demoBtn').prop('disabled', true); },
+						error: function() { $( "#demoBtn" ).html('Thank You!!'); $('#demoBtn').prop('disabled', true); }
         });
+
 				return false;
 			});
 		});
